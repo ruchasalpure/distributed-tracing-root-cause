@@ -1,26 +1,30 @@
 spec_version: "0.1.0"
-name: "distributed-tracing-root-cause"
-version: "1.0.0"
-category: "devtools"
+name: distributed-tracing-root-cause
+version: 1.0.0
+description: Ingests high-throughput OpenTelemetry trace spans and correlates P99 latency anomalies directly to database locks, thread starvation, or downstream circuit breaker trips.
 author: "Rucha Salpure"
-description: "Ingests high-throughput OpenTelemetry trace spans and correlates P99 latency anomalies directly to database locks, thread starvation, or downstream circuit breaker trips"
-capabilities:
-  - "trace-critical-path-analysis"
-  - "autonomous-decision-making"
-  - "explainable-auditing"
-  - "multi-agent-collaboration"
+license: MIT
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
 skills:
-  - "trace-critical-path-analysis"
-tools:
-  - "python_executor"
-  - "audit_logger"
-  - "schema_validator"
+  - trace-critical-path-analysis
+tools: []
+delegation:
+  mode: auto
 runtime:
-  environment: "python3.11"
-  memory_limit: "4GB"
-  timeout_seconds: 300
-governance:
-  audit_logging: true
-  human_in_the_loop: false
-  maker_checker: true
-  explainability_required: true
+  max_turns: 50
+  timeout: 300
+compliance:
+  risk_tier: standard
+  frameworks: []
+tags:
+  - devtools
+  - autonomous-agent
+  - opengap-verified
+metadata:
+  repository: "https://github.com/ruchasalpure/distributed-tracing-root-cause"

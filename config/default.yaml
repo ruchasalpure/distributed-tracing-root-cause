@@ -1,6 +1,0 @@
-app:
-  name: "distributed-tracing-root-cause"
-  environment: "production"
-  logging:
-    level: "INFO"
-    format: "json"

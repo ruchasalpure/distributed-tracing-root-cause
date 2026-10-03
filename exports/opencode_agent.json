@@ -1,8 +1,0 @@
-{
-  "agent_id": "distributed-tracing-root-cause",
-  "protocol": "opencode/v1",
-  "capabilities": [
-    "autonomous",
-    "governed"
-  ]
-}
