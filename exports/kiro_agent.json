@@ -1,0 +1,5 @@
+{
+  "name": "distributed-tracing-root-cause",
+  "service": "aws-kiro",
+  "version": "1.0.0"
+}

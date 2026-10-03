@@ -1,0 +1,26 @@
+spec_version: "0.1.0"
+name: "distributed-tracing-root-cause"
+version: "1.0.0"
+category: "devtools"
+author: "Rucha Salpure"
+description: "Ingests high-throughput OpenTelemetry trace spans and correlates P99 latency anomalies directly to database locks, thread starvation, or downstream circuit breaker trips"
+capabilities:
+  - "trace-critical-path-analysis"
+  - "autonomous-decision-making"
+  - "explainable-auditing"
+  - "multi-agent-collaboration"
+skills:
+  - "trace-critical-path-analysis"
+tools:
+  - "python_executor"
+  - "audit_logger"
+  - "schema_validator"
+runtime:
+  environment: "python3.11"
+  memory_limit: "4GB"
+  timeout_seconds: 300
+governance:
+  audit_logging: true
+  human_in_the_loop: false
+  maker_checker: true
+  explainability_required: true
